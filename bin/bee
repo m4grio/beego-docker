@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -u
+
+packPath=/go/src/${PWD##$GOPATH/src/}
+
+docker run \
+    --rm \
+    -it \
+    --init \
+    -v `pwd`:$packPath \
+    -w="$packPath" \
+    beegodocker_beego \
+bee $@
