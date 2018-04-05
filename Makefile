@@ -6,6 +6,7 @@ prefix?=${DESTDIR}
 EXEC_FILES=\
 	bin/bee
 
+.PHONY: all
 all:
 	@echo "usage: make install"
 	@echo "       make uninstall"
