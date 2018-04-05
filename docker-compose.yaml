@@ -2,3 +2,4 @@ version: '3'
 services:
   beego:
     build: .
+    image: beegodocker_beego
