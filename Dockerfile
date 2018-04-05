@@ -6,7 +6,7 @@ RUN \
         git
 
 RUN \
-    go get -u github.com/astaxie/beego ;\
-    go get -u github.com/beego/bee
+    go get -v -u github.com/astaxie/beego ;\
+    go get -v -u github.com/beego/bee
 
 CMD ["bee"]
